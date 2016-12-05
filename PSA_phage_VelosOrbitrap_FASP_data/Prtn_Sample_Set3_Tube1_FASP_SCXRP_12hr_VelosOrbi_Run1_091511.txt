@@ -1,0 +1,221 @@
+ORNL Mass Spec Sequence Coverage - Sullivan Samples
+
+mspipeline/sullivan/Sample_Set3/analysis/Phages/Tube1_FASP_SCXRP_12hr_VelosOrbi_Run1_091511/Frac1/analysis/tryp_carb_cyst_Sullivan_Sept2011/sequest
+
+
+ID      Name    Length  MolWt   pI      SeqCvg  SeqCnt  SeqUniq   SeqNon-Uniq SpecCnt Unique  Non-Unique     NSAF     Dscrp
+
+1	phage:H7-2_60105:61178_reverse	357	39922	5.3	64.1%	14	14	0	72	72	0	0.03424	MW:39922 
+
+2	phage:10-77a_6088:7596_reverse	502	56665	4.7	59.6%	23	0	23	46	0	46	0.01556	MW:56665 
+
+3	phage:H103-1_21956:23464_forward	502	56665	4.7	59.6%	23	0	23	46	0	46	0.01556	MW:56665 
+
+4	phage:10-77a_4335:5300_reverse	321	33929	5.2	58.9%	13	0	13	29	0	29	0.01534	MW:33929 
+
+5	phage:H103-1_24252:25217_forward	321	33929	5.2	58.9%	13	0	13	29	0	29	0.01534	MW:33929 
+
+6	phage:C.baltica_Phi40:1_6ft_orf0490	184	19478	4.9	58.7%	8	0	8	79	0	79	0.07290	| 6 frame translation [C. baltica Phi40:1] 40783:41337 forward MW:19477 
+
+7	phage:C.baltica_Phi40:1_orf0088	180	19046	4.9	60.0%	8	0	8	79	0	79	0.07452	| hypothetical protein [C. baltica Phi40:1] 40795:41337 forward MW:19046 
+
+8	phage:H7-2_61179:61556_reverse	125	13298	4.9	58.4%	4	4	0	8	8	0	0.01087	MW:13298 
+
+9	phage:10-77a_1645:2127_reverse	160	17542	4.7	56.9%	7	0	7	15	0	15	0.01592	MW:17541 
+
+10	phage:H103-1_27425:27907_forward	160	17542	4.7	56.9%	7	0	7	15	0	15	0.01592	MW:17541 
+
+11	phage:C.baltica_Phi40:1_6ft_orf0735	201	20324	8.4	56.2%	7	0	7	8	0	8	0.00676	| 6 frame translation [C. baltica Phi40:1] 65169:65774 forward MW:20324 
+
+12	phage:C.baltica_Phi40:1_orf0110	200	20210	8.4	56.5%	7	0	7	8	0	8	0.00679	| hypothetical protein [C. baltica Phi40:1] 65172:65774 forward MW:20210 
+
+13	phage:C.baltica_Phi40:1_6ft_orf0739	550	59803	5.4	46.9%	25	0	25	41	0	41	0.01266	| 6 frame translation [C. baltica Phi40:1] 65771:67423 forward MW:59803 
+
+14	phage:C.baltica_Phi40:1_orf0111	549	59690	5.4	47.0%	25	0	25	41	0	41	0.01268	| hypothetical protein [C. baltica Phi40:1] 65774:67423 forward MW:59690 
+
+15	phage:C.baltica_Phi40:1_6ft_orf0641	450	49386	5.1	41.3%	16	0	16	70	0	70	0.02641	| 6 frame translation [C. baltica Phi40:1] 56856:58208 forward MW:49386 
+
+16	phage:C.baltica_Phi40:1_orf0104	446	48915	5.1	41.7%	16	0	16	70	0	70	0.02665	| hypothetical protein P700755_26674 [C. baltica Phi40:1] 56868:58208 forward MW:48915 
+
+17	phage:H7-2_56362:56661_reverse	99	10755	4.8	40.4%	4	4	0	8	8	0	0.01372	MW:10755 
+
+18	CNTM:cont_gi|136429|sp|P00761|TRYP_PIG	231	24409	7.2	38.5%	8	8	0	153	153	0	0.11246	Trypsin precursor # pI:7.00 MW:24410 
+
+19	phage:10-77a_2867:4108_reverse	413	44188	4.7	37.8%	13	0	13	42	0	42	0.01727	MW:44188 
+
+20	phage:H103-1_25444:26685_forward	413	44188	4.7	37.8%	13	0	13	42	0	42	0.01727	MW:44188 
+
+21	phage:C.baltica_Phi40:1_6ft_orf0606	828	94221	5.5	33.3%	24	0	24	35	0	35	0.00718	| 6 frame translation [C. baltica Phi40:1] 53088:55574 forward MW:94222 
+
+22	phage:C.baltica_Phi40:1_orf0102	828	94221	5.5	33.3%	24	0	24	35	0	35	0.00718	| hypothetical protein [C. baltica Phi40:1] 53088:55574 forward MW:94222 
+
+23	phage:C.baltica_Phi39:1_6ft_orf0205	411	45661	7.8	33.3%	12	0	12	13	0	13	0.00537	| 6 frame translation [C. baltica Phi39:1] 23121:24356 reverse MW:45661 
+
+24	phage:C.baltica_Phi39:1_orf0041	409	45444	7.8	33.5%	12	0	12	13	0	13	0.00540	| phage portal protein [C. baltica Phi39:1] 23121:24350 reverse MW:45444 
+
+25	phage:10-77a_32588:34927_reverse	779	82813	6.0	32.9%	20	0	20	28	0	28	0.00610	MW:82813 
+
+26	phage:H103-1_31394:33733_forward	779	82813	6.0	32.9%	20	0	20	28	0	28	0.00610	MW:82813 
+
+27	phage:H7-2_63165:63701_reverse	178	19939	4.9	32.6%	5	5	0	7	7	0	0.00668	MW:19939 
+
+28	phage:H7-2_51564:52091_reverse	175	19134	4.9	32.0%	5	5	0	36	36	0	0.03493	MW:19134 
+
+29	phage:H7-2_55232:55780_reverse	182	20509	4.9	31.9%	4	4	0	7	7	0	0.00653	MW:20508 
+
+30	phage:C.baltica_Phi39:1_orf0037	182	20355	4.7	29.7%	4	1	3	6	1	5	0.00560	| phiE125 gp8 hypothetical protein [C. baltica Phi39:1] 20083:20631 reverse MW:20355 
+
+31	phage:C.baltica_Phi39:1_6ft_orf0167	128	14454	5.3	29.7%	3	0	3	3	0	3	0.00398	| 6 frame translation [C. baltica Phi39:1] 18909:19295 reverse MW:14454 
+
+32	phage:C.baltica_Phi39:1_orf0034	122	13757	5.0	31.1%	3	0	3	3	0	3	0.00418	| hypothetical protein [C. baltica Phi39:1] 18909:19277 reverse MW:13756 
+
+33	phage:H7-2_81485:84145_forward	886	96573	4.6	29.2%	19	19	0	39	39	0	0.00747	MW:96573 
+
+34	phage:10-77a_909:1301_reverse	130	14197	5.1	29.2%	2	0	2	4	0	4	0.00522	MW:14197 
+
+35	phage:H103-1_28251:28643_forward	130	14197	5.1	29.2%	2	0	2	4	0	4	0.00522	MW:14197 
+
+36	phage:C.baltica_Phi39:1_6ft_orf0118	130	14030	8.5	29.2%	3	0	3	3	0	3	0.00392	| 6 frame translation [C. baltica Phi39:1] 12467:12859 reverse MW:14030 
+
+37	phage:C.baltica_Phi39:1_orf0027	73	7417	5.9	52.1%	3	0	3	3	0	3	0.00698	| hypothetical protein [C. baltica Phi39:1] 12467:12688 reverse MW:7417 
+
+38	phage:H7-2_64724:65803_reverse	359	39675	8.7	27.9%	8	8	0	13	13	0	0.00615	MW:39675 
+
+39	Lbla_MED217:638935204	122	13470	10.4	26.2%	3	1	2	4	1	3	0.00557	MED217_04012 ribosomal protein L14 [Leeuwenhoekiella blandensis MED217] 
+
+40	phage:10-77a_26871:29183_reverse	770	81266	4.6	26.1%	19	0	19	33	0	33	0.00728	MW:81266 
+
+41	phage:H103-1_2:2221_forward	739	77805	4.5	27.2%	19	0	19	33	0	33	0.00758	MW:77805 
+
+42	phage:C.baltica_Phi39:1_6ft_orf0112	108	12404	4.9	25.9%	2	0	2	2	0	2	0.00314	| 6 frame translation [C. baltica Phi39:1] 12133:12459 reverse MW:12403 
+
+43	phage:C.baltica_Phi39:1_orf0026	107	12290	4.9	26.2%	2	0	2	2	0	2	0.00317	| hypothetical protein [C. baltica Phi39:1] 12133:12456 reverse MW:12289 
+
+44	phage:C.baltica_Phi39:1_6ft_orf0160	157	16743	4.7	25.5%	2	0	2	2	0	2	0.00216	| 6 frame translation [C. baltica Phi39:1] 18454:18927 reverse MW:16743 
+
+45	phage:C.baltica_Phi39:1_orf0033	150	15940	4.6	26.7%	2	0	2	2	0	2	0.00226	| hypothetical protein [C. baltica Phi39:1] 18454:18906 reverse MW:15939 
+
+46	phage:C.baltica_Phi40:1_6ft_orf0686	1328	147932	4.9	24.4%	23	0	23	26	0	26	0.00332	| 6 frame translation [C. baltica Phi40:1] 60717:64703 forward MW:147933 
+
+47	phage:C.baltica_Phi40:1_orf0108	1324	147434	4.9	24.5%	23	0	23	26	0	26	0.00333	| hypothetical protein [C. baltica Phi40:1] 60729:64703 forward MW:147435 
+
+48	phage:C.baltica_Phi39:1_6ft_orf0178	183	20468	4.7	24.0%	3	0	3	5	0	5	0.00464	| 6 frame translation [C. baltica Phi39:1] 20083:20634 reverse MW:20468 
+
+49	phage:H7-2_49624:50742_reverse	372	42260	9.9	23.9%	8	8	0	10	10	0	0.00456	MW:42260 
+
+50	phage:C.baltica_Phi40:1_6ft_orf0677	285	32960	5.6	23.9%	5	0	5	11	0	11	0.00655	| 6 frame translation [C. baltica Phi40:1] 59866:60723 forward MW:32959 
+
+51	phage:C.baltica_Phi40:1_orf0107	283	32771	5.6	24.0%	5	0	5	11	0	11	0.00660	| hypothetical protein [C. baltica Phi40:1] 59872:60723 forward MW:32771 
+
+52	phage:C.baltica_Phi39:1_6ft_orf0189	443	47253	5.2	23.0%	12	0	12	105	0	105	0.04024	| 6 frame translation [C. baltica Phi39:1] 21210:22541 reverse MW:47253 
+
+53	phage:C.baltica_Phi39:1_orf0039	439	46736	5.2	23.2%	12	0	12	105	0	105	0.04061	| phage major capsid protein [C. baltica Phi39:1] 21210:22529 reverse MW:46736 
+
+54	CNTM:cont_sp|P04264|K2C1_HUMAN	643	65886	8.1	22.6%	10	10	0	25	25	0	0.00660	Keratin, type II cytoskeletal 1 (Cytokeratin 1) (K1) (CK 1) (67 kDa cytokeratin) (Hair alpha protein) - Homo sapiens (Human). # pI:8.16 MW:65887 
+
+55	CNTM:cont_sp|P13645|K1CJ_HUMAN	593	59519	5.2	21.9%	10	9	1	16	14	2	0.00458	Keratin, type I cytoskeletal 10 (Cytokeratin 10) (K10) (CK 10) - Homo sapiens (Human). # pI:5.13 MW:59519 
+
+56	phage:10-77a_8827:10023_reverse	398	44721	9.5	21.9%	9	0	9	10	0	10	0.00427	MW:44721 
+
+57	phage:H103-1_19529:20725_forward	398	44721	9.5	21.9%	9	0	9	10	0	10	0.00427	MW:44721 
+
+58	phage:C.baltica_Phi40:1_6ft_orf0669	238	27554	5.4	20.6%	5	0	5	5	0	5	0.00357	| 6 frame translation [C. baltica Phi40:1] 59144:59860 forward MW:27554 
+
+59	phage:C.baltica_Phi40:1_orf0106	232	26793	5.3	21.1%	5	0	5	5	0	5	0.00366	| hypothetical protein [C. baltica Phi40:1] 59162:59860 forward MW:26793 
+
+60	Rbif_HTCC2501:646325831	122	13429	10.2	20.5%	2	1	1	2	1	1	0.00278	RB2501_09905 50S ribosomal protein L14 [Robiginitalea biformata HTCC2501] 
+
+61	phage:H7-2_80687:81466_forward	259	29016	6.4	20.1%	4	4	0	8	8	0	0.00524	MW:29016 
+
+62	phage:10-77a_29113:31716_reverse	867	92076	4.5	19.5%	12	0	12	15	0	15	0.00294	MW:92077 
+
+63	phage:H103-1_34605:37208_forward	867	92076	4.5	19.5%	12	0	12	15	0	15	0.00294	MW:92077 
+
+64	phage:C.baltica_Phi39:1_6ft_orf0083	695	75611	5.2	19.1%	10	0	10	16	0	16	0.00391	| 6 frame translation [C. baltica Phi39:1] 8586:10673 reverse MW:75612 
+
+65	phage:C.baltica_Phi39:1_orf0024	677	73289	5.1	19.6%	10	0	10	16	0	16	0.00401	| pectate lyase [C. baltica Phi39:1] 8586:10619 reverse MW:73289 
+
+66	phage:C.baltica_Phi39:1_6ft_orf0137	728	75480	5.9	19.0%	10	0	10	13	0	13	0.00303	| 6 frame translation [C. baltica Phi39:1] 15508:17694 reverse MW:75480 
+
+67	phage:C.baltica_Phi39:1_orf0030	726	75169	5.9	19.0%	10	0	10	13	0	13	0.00304	| phage tape measure protein [C. baltica Phi39:1] 15508:17688 reverse MW:75170 
+
+68	phage:C.baltica_Phi40:1_orf0114	1561	173913	5.6	18.7%	25	0	25	34	0	34	0.00370	| hypothetical protein [C. baltica Phi40:1] 67826:72511 forward MW:173916 
+
+69	phage:H7-2_43652:44011_reverse	119	13240	4.7	18.5%	2	2	0	2	2	0	0.00285	MW:13240 
+
+70	phage:C.baltica_Phi40:1_6ft_orf0759	1657	184315	5.5	18.1%	26	1	25	35	1	34	0.00359	| 6 frame translation [C. baltica Phi40:1] 67538:72511 forward MW:184317 
+
+71	phage:C.baltica_Phi39:1_6ft_orf0170	157	17045	10.2	17.8%	2	0	2	2	0	2	0.00216	| 6 frame translation [C. baltica Phi39:1] 19283:19756 reverse MW:17045 
+
+72	phage:C.baltica_Phi39:1_orf0035	153	16553	10.3	18.3%	2	0	2	2	0	2	0.00222	| hypothetical protein [C. baltica Phi39:1] 19283:19744 reverse MW:16553 
+
+73	phage:C.baltica_Phi40:1_6ft_orf0447	152	16824	10.5	17.1%	5	0	5	17	0	17	0.01899	| 6 frame translation [C. baltica Phi40:1] 37494:37952 forward MW:16823 
+
+74	phage:C.baltica_Phi40:1_orf0079	113	12665	10.9	23.0%	5	0	5	17	0	17	0.02554	| hypothetical protein [C. baltica Phi40:1] 37611:37952 forward MW:12664 
+
+75	Lbla_MED217:638935199	136	15430	10.5	16.9%	2	1	1	2	1	1	0.00250	MED217_03987 50S ribosomal protein L22 [Leeuwenhoekiella blandensis MED217] 
+
+76	phage:H7-2_47025:48017_reverse	330	35761	9.1	16.7%	4	4	0	4	4	0	0.00206	MW:35761 
+
+77	Rbif_HTCC2501:646325826	128	14623	10.3	16.4%	2	1	1	3	2	1	0.00398	RB2501_09880 50S ribosomal protein L22 [Robiginitalea biformata HTCC2501] 
+
+78	phage:H7-2_46404:47021_reverse	205	22149	5.0	15.6%	2	2	0	3	3	0	0.00248	MW:22148 
+
+79	phage:C.baltica_Phi39:1_6ft_orf0097	503	53016	4.6	15.1%	7	0	7	12	0	12	0.00405	| 6 frame translation [C. baltica Phi39:1] 10631:12142 reverse MW:53016 
+
+80	phage:C.baltica_Phi39:1_orf0025	500	52676	4.6	15.2%	7	0	7	12	0	12	0.00408	| hypothetical protein RB2501_01291 [C. baltica Phi39:1] 10631:12133 reverse MW:52676 
+
+81	phage:H7-2_69312:70718_reverse	468	48090	4.8	15.0%	4	4	0	7	7	0	0.00254	MW:48090 
+
+82	phage:C.baltica_Phi40:1_6ft_orf0505	114	12750	10.4	14.0%	2	0	2	4	0	4	0.00596	| 6 frame translation [C. baltica Phi40:1] 42469:42813 forward MW:12749 
+
+83	phage:C.baltica_Phi40:1_orf0091	101	11336	10.5	15.8%	2	0	2	4	0	4	0.00672	| hypothetical protein P60_68 [C. baltica Phi40:1] 42508:42813 forward MW:11336 
+
+84	Ddon_MED134:638926531	122	13387	10.2	13.1%	2	0	2	3	0	3	0.00418	MED134_12461 ribosomal protein L14 [Dokdonia donghaensis MED134] 
+
+85	phage:H7-2_41339:42220_reverse	293	32556	4.4	12.3%	3	3	0	3	3	0	0.00174	MW:32556 
+
+86	phage:H7-2_53480:54238_reverse	252	28219	4.6	12.3%	3	3	0	5	5	0	0.00337	MW:28218 
+
+87	phage:H7-2_44222:44944_reverse	240	26323	4.7	12.1%	2	2	0	3	3	0	0.00212	MW:26323 
+
+88	phage:H7-2_46054:46482_reverse	142	16350	5.6	12.0%	2	2	0	2	2	0	0.00239	MW:16350 
+
+89	phage:H7-2_56689:57576_reverse	295	31804	4.6	11.2%	3	3	0	4	4	0	0.00230	MW:31803 
+
+90	phage:C.baltica_Phi39:1_6ft_orf0199	201	22915	5.2	10.9%	2	0	2	3	0	3	0.00253	| 6 frame translation [C. baltica Phi39:1] 22529:23134 reverse MW:22914 
+
+91	phage:C.baltica_Phi39:1_orf0040	200	22786	5.1	11.0%	2	0	2	3	0	3	0.00255	| phage prohead protease [C. baltica Phi39:1] 22529:23131 reverse MW:22786 
+
+92	phage:H103-1_37138:37730_forward	197	21903	4.5	10.2%	2	0	2	3	0	3	0.00259	MW:21903 
+
+93	phage:10-77a_31713:32624_reverse	303	33626	5.5	8.9%	2	0	2	2	0	2	0.00112	MW:33626 
+
+94	phage:H103-1_33697:34608_forward	303	33626	5.5	8.9%	2	0	2	2	0	2	0.00112	MW:33626 
+
+95	phage:H7-2_52088:53467_reverse	459	49333	5.0	8.7%	3	3	0	5	5	0	0.00185	MW:49333 
+
+96	phage:C.baltica_Phi40:1_6ft_orf0532	976	104843	4.6	8.4%	6	0	6	7	0	7	0.00122	| 6 frame translation [C. baltica Phi40:1] 44800:47730 forward MW:104844 
+
+97	phage:C.baltica_Phi40:1_orf0096	976	104843	4.6	8.4%	6	0	6	7	0	7	0.00122	| putative tail fiber [C. baltica Phi40:1] 44800:47730 forward MW:104844 
+
+98	phage:C.baltica_Phi40:1_6ft_orf0557	450	48156	4.7	7.3%	2	0	2	2	0	2	0.00075	| 6 frame translation [C. baltica Phi40:1] 48187:49539 forward MW:48156 
+
+99	phage:C.baltica_Phi40:1_orf0098	443	47357	4.6	7.4%	2	0	2	2	0	2	0.00077	| hypothetical protein [C. baltica Phi40:1] 48208:49539 forward MW:47357 
+
+100	phage:H7-2_61592:63061_reverse	489	53586	4.7	5.1%	2	2	0	2	2	0	0.00069	MW:53586 
+
+101	Lbla_MED217:638935963	595	69184	7.7	4.7%	2	2	0	5	5	0	0.00143	MED217_02280 hypothetical protein [Leeuwenhoekiella blandensis MED217] 
+
+102	phage:H7-2_42195:43670_reverse	491	53094	4.4	4.5%	2	2	0	2	2	0	0.00069	MW:53094 
+
+103	Patl_T6c:638056272	587	64522	5.3	4.1%	2	2	0	2	2	0	0.00058	Patl_3241 polysaccharide export protein [Pseudoalteromonas atlantica T6c] 
+
+104	phage:C.baltica_Phi39:1_6ft_orf0120	703	78517	4.7	3.7%	2	0	2	3	0	3	0.00072	| 6 frame translation [C. baltica Phi39:1] 12696:14807 reverse MW:78517 
+
+105	phage:C.baltica_Phi39:1_orf0028	644	71856	4.7	4.0%	2	0	2	3	0	3	0.00079	| conserved hypothetical protein [C. baltica Phi39:1] 12696:14630 reverse MW:71856 
+
+106	Rbif_HTCC2501:646326410	631	70749	6.1	2.5%	2	0	2	2	0	2	0.00054	RB2501_12849 DNA polymerase III subunit gamma/tau [Robiginitalea biformata HTCC2501] 
+
+107	Lbla_MED217:638935513	800	92497	7.0	1.5%	2	1	1	2	1	1	0.00042	MED217_05532 TraG-like protein [Leeuwenhoekiella blandensis MED217] 
+

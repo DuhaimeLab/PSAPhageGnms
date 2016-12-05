@@ -1,0 +1,307 @@
+ORNL Mass Spec Sequence Coverage - Sullivan Samples
+
+mspipeline/sullivan/Sample_Set3/analysis/Phages/Tube1_FASP_SCXRP_10hr_2Ex_VelosOrbi_Run1_091611/Frac1/analysis/tryp_carb_cyst_Sullivan_Sept2011/sequest
+
+
+ID      Name    Length  MolWt   pI      SeqCvg  SeqCnt  SeqUniq   SeqNon-Uniq SpecCnt Unique  Non-Unique     NSAF     Dscrp
+
+1	phage:10-77a_1645:2127_reverse	160	17542	4.7	82.5%	12	0	12	204	0	204	0.02704	MW:17541 
+
+2	phage:H103-1_27425:27907_forward	160	17542	4.7	82.5%	12	0	12	204	0	204	0.02704	MW:17541 
+
+3	phage:H7-2_60105:61178_reverse	357	39922	5.3	71.1%	28	28	0	732	732	0	0.04348	MW:39922 
+
+4	phage:10-77a_4335:5300_reverse	321	33929	5.2	70.7%	26	0	26	688	0	688	0.04545	MW:33929 
+
+5	phage:H103-1_24252:25217_forward	321	33929	5.2	70.7%	26	0	26	688	0	688	0.04545	MW:33929 
+
+6	phage:10-77a_6088:7596_reverse	502	56665	4.7	70.1%	37	0	37	437	0	437	0.01846	MW:56665 
+
+7	phage:H103-1_21956:23464_forward	502	56665	4.7	70.1%	37	0	37	437	0	437	0.01846	MW:56665 
+
+8	phage:10-77a_32588:34927_reverse	779	82813	6.0	68.7%	43	0	43	306	0	306	0.00833	MW:82813 
+
+9	phage:H103-1_31394:33733_forward	779	82813	6.0	68.7%	43	0	43	306	0	306	0.00833	MW:82813 
+
+10	phage:10-77a_2867:4108_reverse	413	44188	4.7	65.9%	26	0	26	849	0	849	0.04359	MW:44188 
+
+11	phage:H103-1_25444:26685_forward	413	44188	4.7	65.9%	26	0	26	849	0	849	0.04359	MW:44188 
+
+12	phage:C.baltica_Phi40:1_6ft_orf0735	201	20324	8.4	65.7%	11	0	11	52	0	52	0.00549	| 6 frame translation [C. baltica Phi40:1] 65169:65774 forward MW:20324 
+
+13	phage:C.baltica_Phi40:1_orf0110	200	20210	8.4	66.0%	11	0	11	52	0	52	0.00551	| hypothetical protein [C. baltica Phi40:1] 65172:65774 forward MW:20210 
+
+14	phage:C.baltica_Phi40:1_6ft_orf0490	184	19478	4.9	64.1%	13	0	13	153	0	153	0.01763	| 6 frame translation [C. baltica Phi40:1] 40783:41337 forward MW:19477 
+
+15	phage:C.baltica_Phi40:1_orf0088	180	19046	4.9	65.6%	13	0	13	153	0	153	0.01803	| hypothetical protein [C. baltica Phi40:1] 40795:41337 forward MW:19046 
+
+16	phage:C.baltica_Phi40:1_6ft_orf0739	550	59803	5.4	57.3%	39	0	39	146	0	146	0.00563	| 6 frame translation [C. baltica Phi40:1] 65771:67423 forward MW:59803 
+
+17	phage:C.baltica_Phi40:1_orf0111	549	59690	5.4	57.4%	39	0	39	146	0	146	0.00564	| hypothetical protein [C. baltica Phi40:1] 65774:67423 forward MW:59690 
+
+18	phage:C.baltica_Phi40:1_6ft_orf0641	450	49386	5.1	56.4%	26	0	26	740	0	740	0.03487	| 6 frame translation [C. baltica Phi40:1] 56856:58208 forward MW:49386 
+
+19	phage:C.baltica_Phi40:1_orf0104	446	48915	5.1	57.0%	26	0	26	740	0	740	0.03518	| hypothetical protein P700755_26674 [C. baltica Phi40:1] 56868:58208 forward MW:48915 
+
+20	phage:C.baltica_Phi40:1_6ft_orf0669	238	27554	5.4	52.9%	12	0	12	39	0	39	0.00347	| 6 frame translation [C. baltica Phi40:1] 59144:59860 forward MW:27554 
+
+21	phage:C.baltica_Phi40:1_orf0106	232	26793	5.3	54.3%	12	0	12	39	0	39	0.00356	| hypothetical protein [C. baltica Phi40:1] 59162:59860 forward MW:26793 
+
+22	phage:C.baltica_Phi40:1_6ft_orf0606	828	94221	5.5	51.2%	44	0	44	334	0	334	0.00855	| 6 frame translation [C. baltica Phi40:1] 53088:55574 forward MW:94222 
+
+23	phage:C.baltica_Phi40:1_orf0102	828	94221	5.5	51.2%	44	0	44	334	0	334	0.00855	| hypothetical protein [C. baltica Phi40:1] 53088:55574 forward MW:94222 
+
+24	phage:H7-2_61179:61556_reverse	125	13298	4.9	51.2%	6	6	0	222	222	0	0.03766	MW:13298 
+
+25	phage:C.baltica_Phi39:1_6ft_orf0083	695	75611	5.2	48.2%	27	0	27	144	0	144	0.00439	| 6 frame translation [C. baltica Phi39:1] 8586:10673 reverse MW:75612 
+
+26	phage:C.baltica_Phi39:1_orf0024	677	73289	5.1	49.5%	27	0	27	144	0	144	0.00451	| pectate lyase [C. baltica Phi39:1] 8586:10619 reverse MW:73289 
+
+27	phage:H7-2_64724:65803_reverse	359	39675	8.7	48.2%	16	16	0	117	117	0	0.00691	MW:39675 
+
+28	phage:C.baltica_Phi39:1_6ft_orf0137	728	75480	5.9	46.7%	30	0	30	142	0	142	0.00414	| 6 frame translation [C. baltica Phi39:1] 15508:17694 reverse MW:75480 
+
+29	phage:C.baltica_Phi39:1_orf0030	726	75169	5.9	46.8%	30	0	30	142	0	142	0.00415	| phage tape measure protein [C. baltica Phi39:1] 15508:17688 reverse MW:75170 
+
+30	phage:H7-2_55232:55780_reverse	182	20509	4.9	46.7%	8	8	0	88	88	0	0.01025	MW:20508 
+
+31	phage:H103-1_2:2221_forward	739	77805	4.5	43.4%	30	0	30	381	0	381	0.01093	MW:77805 
+
+32	phage:H7-2_81485:84145_forward	886	96573	4.6	43.1%	32	32	0	361	361	0	0.00864	MW:96573 
+
+33	phage:C.baltica_Phi40:1_6ft_orf0686	1328	147932	4.9	43.0%	45	0	45	139	0	139	0.00222	| 6 frame translation [C. baltica Phi40:1] 60717:64703 forward MW:147933 
+
+34	phage:C.baltica_Phi40:1_orf0108	1324	147434	4.9	43.1%	45	0	45	139	0	139	0.00223	| hypothetical protein [C. baltica Phi40:1] 60729:64703 forward MW:147435 
+
+35	phage:10-77a_26871:29183_reverse	770	81266	4.6	42.7%	31	0	31	382	0	382	0.01052	MW:81266 
+
+36	CNTM:cont_sp|P04264|K2C1_HUMAN	643	65886	8.1	42.1%	27	25	2	137	105	32	0.00452	Keratin, type II cytoskeletal 1 (Cytokeratin 1) (K1) (CK 1) (67 kDa cytokeratin) (Hair alpha protein) - Homo sapiens (Human). # pI:8.16 MW:65887 
+
+37	phage:H7-2_47025:48017_reverse	330	35761	9.1	41.2%	14	13	1	57	55	2	0.00366	MW:35761 
+
+38	phage:10-77a_909:1301_reverse	130	14197	5.1	40.8%	4	0	4	16	0	16	0.00261	MW:14197 
+
+39	phage:H103-1_28251:28643_forward	130	14197	5.1	40.8%	4	0	4	16	0	16	0.00261	MW:14197 
+
+40	phage:C.baltica_Phi40:1_6ft_orf0677	285	32960	5.6	40.7%	10	0	10	99	0	99	0.00737	| 6 frame translation [C. baltica Phi40:1] 59866:60723 forward MW:32959 
+
+41	phage:C.baltica_Phi40:1_orf0107	283	32771	5.6	41.0%	10	0	10	99	0	99	0.00742	| hypothetical protein [C. baltica Phi40:1] 59872:60723 forward MW:32771 
+
+42	phage:10-77a_493:915_reverse	140	15866	5.3	40.7%	4	0	4	16	0	16	0.00242	MW:15866 
+
+43	phage:H103-1_28637:29059_forward	140	15866	5.3	40.7%	4	0	4	16	0	16	0.00242	MW:15866 
+
+44	phage:C.baltica_Phi39:1_6ft_orf0205	411	45661	7.8	40.6%	16	0	16	90	0	90	0.00464	| 6 frame translation [C. baltica Phi39:1] 23121:24356 reverse MW:45661 
+
+45	phage:C.baltica_Phi39:1_orf0041	409	45444	7.8	40.8%	16	0	16	90	0	90	0.00467	| phage portal protein [C. baltica Phi39:1] 23121:24350 reverse MW:45444 
+
+46	phage:10-77a_8827:10023_reverse	398	44721	9.5	40.5%	20	0	20	79	0	79	0.00421	MW:44721 
+
+47	phage:H103-1_19529:20725_forward	398	44721	9.5	40.5%	20	0	20	79	0	79	0.00421	MW:44721 
+
+48	phage:C.baltica_Phi40:1_6ft_orf0759	1657	184315	5.5	39.5%	60	3	57	225	4	221	0.00288	| 6 frame translation [C. baltica Phi40:1] 67538:72511 forward MW:184317 
+
+49	CNTM:cont_gi|136429|sp|P00761|TRYP_PIG	231	24409	7.2	38.5%	9	9	0	813	813	0	0.07463	Trypsin precursor # pI:7.00 MW:24410 
+
+50	phage:H7-2_56689:57576_reverse	295	31804	4.6	38.3%	10	10	0	73	73	0	0.00525	MW:31803 
+
+51	phage:C.baltica_Phi40:1_orf0114	1561	173913	5.6	38.0%	57	0	57	221	0	221	0.00300	| hypothetical protein [C. baltica Phi40:1] 67826:72511 forward MW:173916 
+
+52	phage:H7-2_44222:44944_reverse	240	26323	4.7	37.5%	6	6	0	29	29	0	0.00256	MW:26323 
+
+53	Rbif_HTCC2501:646325843	38	4573	11.9	36.8%	2	1	1	4	3	1	0.00223	RB2501_09965 ribosomal protein L36 [Robiginitalea biformata HTCC2501] 
+
+54	phage:C.baltica_Phi39:1_6ft_orf0167	128	14454	5.3	36.7%	5	0	5	19	0	19	0.00315	| 6 frame translation [C. baltica Phi39:1] 18909:19295 reverse MW:14454 
+
+55	phage:C.baltica_Phi39:1_orf0034	122	13757	5.0	38.5%	5	0	5	19	0	19	0.00330	| hypothetical protein [C. baltica Phi39:1] 18909:19277 reverse MW:13756 
+
+56	phage:H7-2_43652:44011_reverse	119	13240	4.7	36.1%	4	4	0	9	9	0	0.00160	MW:13240 
+
+57	phage:H7-2_46404:47021_reverse	205	22149	5.0	35.6%	5	5	0	13	13	0	0.00134	MW:22148 
+
+58	CNTM:cont_sp|P13645|K1CJ_HUMAN	593	59519	5.2	35.4%	21	18	3	85	81	4	0.00304	Keratin, type I cytoskeletal 10 (Cytokeratin 10) (K10) (CK 10) - Homo sapiens (Human). # pI:5.13 MW:59519 
+
+59	phage:10-77a_29113:31716_reverse	867	92076	4.5	34.6%	26	0	26	148	0	148	0.00362	MW:92077 
+
+60	phage:H103-1_34605:37208_forward	867	92076	4.5	34.6%	26	0	26	148	0	148	0.00362	MW:92077 
+
+61	phage:H7-2_49624:50742_reverse	372	42260	9.9	34.4%	13	13	0	41	41	0	0.00234	MW:42260 
+
+62	phage:C.baltica_Phi39:1_orf0028	644	71856	4.7	33.2%	14	0	14	46	0	46	0.00151	| conserved hypothetical protein [C. baltica Phi39:1] 12696:14630 reverse MW:71856 
+
+63	phage:C.baltica_Phi39:1_6ft_orf0120	703	78517	4.7	32.9%	15	1	14	50	4	46	0.00151	| 6 frame translation [C. baltica Phi39:1] 12696:14807 reverse MW:78517 
+
+64	phage:C.baltica_Phi39:1_6ft_orf0118	130	14030	8.5	32.3%	3	0	3	7	0	7	0.00114	| 6 frame translation [C. baltica Phi39:1] 12467:12859 reverse MW:14030 
+
+65	phage:C.baltica_Phi39:1_orf0027	73	7417	5.9	57.5%	3	0	3	7	0	7	0.00203	| hypothetical protein [C. baltica Phi39:1] 12467:12688 reverse MW:7417 
+
+66	phage:C.baltica_Phi40:1_6ft_orf0757	62	7289	6.8	32.3%	2	0	2	4	0	4	0.00137	| 6 frame translation [C. baltica Phi40:1] 67429:67617 forward MW:7289 
+
+67	phage:C.baltica_Phi40:1_orf0112	59	6914	6.8	33.9%	2	0	2	4	0	4	0.00144	| hypothetical protein [C. baltica Phi40:1] 67438:67617 forward MW:6913 
+
+68	Lbla_MED217:638935216	38	4516	11.8	31.6%	2	1	1	3	2	1	0.00167	MED217_04072 ribosomal protein L36 [Leeuwenhoekiella blandensis MED217] 
+
+69	phage:C.baltica_Phi39:1_6ft_orf0112	108	12404	4.9	31.5%	4	0	4	24	0	24	0.00471	| 6 frame translation [C. baltica Phi39:1] 12133:12459 reverse MW:12403 
+
+70	phage:C.baltica_Phi39:1_orf0026	107	12290	4.9	31.8%	4	0	4	24	0	24	0.00476	| hypothetical protein [C. baltica Phi39:1] 12133:12456 reverse MW:12289 
+
+71	phage:C.baltica_Phi39:1_6ft_orf0175	123	13547	8.9	30.9%	4	0	4	7	0	7	0.00121	| 6 frame translation [C. baltica Phi39:1] 19731:20102 reverse MW:13546 
+
+72	phage:C.baltica_Phi39:1_orf0036	116	12731	8.4	32.8%	4	0	4	7	0	7	0.00128	| hypothetical protein [C. baltica Phi39:1] 19731:20081 reverse MW:12730 
+
+73	phage:H103-1_37138:37730_forward	197	21903	4.5	29.9%	8	0	8	69	0	69	0.00743	MW:21903 
+
+74	phage:C.baltica_Phi39:1_6ft_orf0160	157	16743	4.7	29.9%	4	0	4	75	0	75	0.01013	| 6 frame translation [C. baltica Phi39:1] 18454:18927 reverse MW:16743 
+
+75	phage:C.baltica_Phi39:1_orf0033	150	15940	4.6	31.3%	4	0	4	75	0	75	0.01060	| hypothetical protein [C. baltica Phi39:1] 18454:18906 reverse MW:15939 
+
+76	phage:10-77a_31713:32624_reverse	303	33626	5.5	29.7%	7	0	7	38	0	38	0.00266	MW:33626 
+
+77	phage:H103-1_33697:34608_forward	303	33626	5.5	29.7%	7	0	7	38	0	38	0.00266	MW:33626 
+
+78	phage:H7-2_46054:46482_reverse	142	16350	5.6	28.2%	4	4	0	8	8	0	0.00119	MW:16350 
+
+79	phage:C.baltica_Phi40:1_6ft_orf0557	450	48156	4.7	26.9%	8	0	8	41	0	41	0.00193	| 6 frame translation [C. baltica Phi40:1] 48187:49539 forward MW:48156 
+
+80	phage:C.baltica_Phi40:1_orf0098	443	47357	4.6	27.3%	8	0	8	41	0	41	0.00196	| hypothetical protein [C. baltica Phi40:1] 48208:49539 forward MW:47357 
+
+81	phage:H7-2_63165:63701_reverse	178	19939	4.9	25.8%	7	7	0	47	47	0	0.00560	MW:19939 
+
+82	phage:H7-2_56362:56661_reverse	99	10755	4.8	25.3%	2	2	0	14	14	0	0.00300	MW:10755 
+
+83	phage:C.baltica_Phi39:1_6ft_orf0189	443	47253	5.2	24.6%	20	0	20	1052	0	1052	0.05036	| 6 frame translation [C. baltica Phi39:1] 21210:22541 reverse MW:47253 
+
+84	phage:C.baltica_Phi39:1_orf0039	439	46736	5.2	24.8%	20	0	20	1052	0	1052	0.05082	| phage major capsid protein [C. baltica Phi39:1] 21210:22529 reverse MW:46736 
+
+85	phage:H7-2_52088:53467_reverse	459	49333	5.0	24.4%	11	11	0	50	50	0	0.00231	MW:49333 
+
+86	phage:C.baltica_Phi39:1_6ft_orf0132	247	28344	4.8	24.3%	4	0	4	16	0	16	0.00137	| 6 frame translation [C. baltica Phi39:1] 14774:15517 reverse MW:28344 
+
+87	phage:C.baltica_Phi39:1_orf0029	242	27723	4.7	24.8%	4	0	4	16	0	16	0.00140	| protein PHG11b_43 [C. baltica Phi39:1] 14774:15502 reverse MW:27723 
+
+88	phage:C.baltica_Phi39:1_6ft_orf0097	503	53016	4.6	22.5%	10	0	10	66	0	66	0.00278	| 6 frame translation [C. baltica Phi39:1] 10631:12142 reverse MW:53016 
+
+89	phage:C.baltica_Phi39:1_orf0025	500	52676	4.6	22.6%	10	0	10	66	0	66	0.00280	| hypothetical protein RB2501_01291 [C. baltica Phi39:1] 10631:12133 reverse MW:52676 
+
+90	phage:C.baltica_Phi39:1_orf0037	182	20355	4.7	22.5%	4	1	3	36	2	34	0.00419	| phiE125 gp8 hypothetical protein [C. baltica Phi39:1] 20083:20631 reverse MW:20355 
+
+91	CNTM:cont_sp|P02533|K1CN_HUMAN	471	51490	5.2	20.8%	11	3	8	20	8	12	0.00090	Keratin, type I cytoskeletal 14 (Cytokeratin 14) (K14) (CK 14) - Homo sapiens (Human). # pI:5.09 MW:51491 
+
+92	phage:H7-2_41339:42220_reverse	293	32556	4.4	20.8%	6	6	0	33	33	0	0.00239	MW:32556 
+
+93	phage:H7-2_53480:54238_reverse	252	28219	4.6	20.2%	4	4	0	20	20	0	0.00168	MW:28218 
+
+94	phage:H7-2_80687:81466_forward	259	29016	6.4	20.1%	5	5	0	13	13	0	0.00106	MW:29016 
+
+95	phage:H7-2_42195:43670_reverse	491	53094	4.4	19.8%	5	5	0	45	45	0	0.00194	MW:53094 
+
+96	CNTM:cont_sp|P13647|K2C5_HUMAN	590	62461	8.1	19.3%	11	6	5	35	11	24	0.00126	Keratin, type II cytoskeletal 5 (Cytokeratin 5) (K5) (CK 5) (58 kDa cytokeratin) - Homo sapiens (Human). # pI:8.14 MW:62462 
+
+97	phage:H7-2_69312:70718_reverse	468	48090	4.8	19.2%	8	8	0	116	116	0	0.00526	MW:48090 
+
+98	CNTM:cont_sp|P48668|K2CE_HUMAN	563	60092	8.0	19.0%	10	5	5	34	10	24	0.00128	Keratin, type II cytoskeletal 6E (Cytokeratin 6E) (CK 6E) (K6e keratin) - Homo sapiens (Human). # pI:8.14 MW:60092 
+
+99	phage:C.baltica_Phi39:1_6ft_orf0199	201	22915	5.2	18.9%	4	0	4	18	0	18	0.00190	| 6 frame translation [C. baltica Phi39:1] 22529:23134 reverse MW:22914 
+
+100	phage:C.baltica_Phi39:1_orf0040	200	22786	5.1	19.0%	4	0	4	18	0	18	0.00191	| phage prohead protease [C. baltica Phi39:1] 22529:23131 reverse MW:22786 
+
+101	phage:10-77a_1289:1708_reverse	139	15704	4.4	18.7%	2	0	2	4	0	4	0.00061	MW:15703 
+
+102	phage:H103-1_27844:28263_forward	139	15704	4.4	18.7%	2	0	2	4	0	4	0.00061	MW:15703 
+
+103	phage:C.baltica_Phi40:1_6ft_orf0532	976	104843	4.6	18.1%	13	0	13	44	0	44	0.00096	| 6 frame translation [C. baltica Phi40:1] 44800:47730 forward MW:104844 
+
+104	phage:C.baltica_Phi40:1_orf0096	976	104843	4.6	18.1%	13	0	13	44	0	44	0.00096	| putative tail fiber [C. baltica Phi40:1] 44800:47730 forward MW:104844 
+
+105	phage:C.baltica_Phi40:1_6ft_orf0628	404	45014	4.8	17.8%	5	0	5	10	0	10	0.00052	| 6 frame translation [C. baltica Phi40:1] 55624:56838 forward MW:45014 
+
+106	phage:C.baltica_Phi40:1_orf0103	400	44512	4.8	18.0%	5	0	5	10	0	10	0.00053	| conserved hypothetical protein [C. baltica Phi40:1] 55636:56838 forward MW:44512 
+
+107	phage:H7-2_44991:46103_reverse	370	40743	4.9	17.8%	5	5	0	25	25	0	0.00143	MW:40743 
+
+108	phage:C.baltica_Phi39:1_6ft_orf0170	157	17045	10.2	17.8%	2	0	2	6	0	6	0.00081	| 6 frame translation [C. baltica Phi39:1] 19283:19756 reverse MW:17045 
+
+109	phage:C.baltica_Phi39:1_orf0035	153	16553	10.3	18.3%	2	0	2	6	0	6	0.00083	| hypothetical protein [C. baltica Phi39:1] 19283:19744 reverse MW:16553 
+
+110	Ptun_D2:639008787	135	15467	5.8	17.8%	2	2	0	3	3	0	0.00047	PTD2_08869 curli production assembly/transport component [Pseudoalteromonas tunicata D2] 
+
+111	phage:10-77a_36093:37211_reverse	372	39723	4.5	17.2%	5	0	5	12	0	12	0.00068	MW:39722 
+
+112	phage:H103-1_29035:30228_forward	397	42551	4.6	16.1%	5	0	5	12	0	12	0.00064	MW:42551 
+
+113	phage:C.baltica_Phi40:1_6ft_orf0447	152	16824	10.5	17.1%	5	0	5	30	0	30	0.00419	| 6 frame translation [C. baltica Phi40:1] 37494:37952 forward MW:16823 
+
+114	phage:C.baltica_Phi40:1_orf0079	113	12665	10.9	23.0%	5	0	5	30	0	30	0.00563	| hypothetical protein [C. baltica Phi40:1] 37611:37952 forward MW:12664 
+
+115	phage:C.baltica_Phi39:1_6ft_orf0178	183	20468	4.7	16.9%	3	0	3	34	0	34	0.00394	| 6 frame translation [C. baltica Phi39:1] 20083:20634 reverse MW:20468 
+
+116	Lbla_MED217:638935199	136	15430	10.5	16.9%	2	1	1	10	6	4	0.00156	MED217_03987 50S ribosomal protein L22 [Leeuwenhoekiella blandensis MED217] 
+
+117	phage:H7-2_54566:55141_reverse	191	21921	9.9	16.8%	2	2	0	3	3	0	0.00033	MW:21920 
+
+118	phage:H7-2_55794:56351_reverse	185	19438	4.6	16.8%	3	3	0	8	8	0	0.00092	MW:19437 
+
+119	Rbif_HTCC2501:646325826	128	14623	10.3	16.4%	2	1	1	6	2	4	0.00099	RB2501_09880 50S ribosomal protein L22 [Robiginitalea biformata HTCC2501] 
+
+120	phage:C.baltica_Phi40:1_6ft_orf0505	114	12750	10.4	14.0%	3	0	3	7	0	7	0.00130	| 6 frame translation [C. baltica Phi40:1] 42469:42813 forward MW:12749 
+
+121	phage:C.baltica_Phi40:1_orf0091	101	11336	10.5	15.8%	3	0	3	7	0	7	0.00147	| hypothetical protein P60_68 [C. baltica Phi40:1] 42508:42813 forward MW:11336 
+
+122	Ddon_MED134:638926531	122	13387	10.2	13.9%	2	0	2	3	0	3	0.00052	MED134_12461 ribosomal protein L14 [Dokdonia donghaensis MED134] 
+
+123	Lbla_MED217:638935204	122	13470	10.4	13.9%	2	0	2	3	0	3	0.00052	MED217_04012 ribosomal protein L14 [Leeuwenhoekiella blandensis MED217] 
+
+124	Ddon_MED134:638926540	150	15922	10.1	13.3%	2	0	2	7	0	7	0.00099	MED134_12506 50S ribosomal protein L15 [Dokdonia donghaensis MED134] 
+
+125	Rbif_HTCC2501:646326322	114	13227	11.6	13.2%	2	1	1	4	2	2	0.00074	RB2501_12392 50S ribosomal protein L20 [Robiginitalea biformata HTCC2501] 
+
+126	Rbif_HTCC2501:646325885	305	36345	9.2	12.8%	2	2	0	3	3	0	0.00021	RB2501_10227 hypothetical protein [Robiginitalea biformata HTCC2501] 
+
+127	phage:H7-2_51564:52091_reverse	175	19134	4.9	12.6%	4	4	0	23	23	0	0.00279	MW:19134 
+
+128	CNTM:cont_sp|P08727|K1CS_HUMAN	400	44106	5.1	12.5%	6	1	5	9	1	8	0.00048	Keratin, type I cytoskeletal 19 (Cytokeratin 19) (K19) (CK 19) - Homo sapiens (Human). # pI:5.05 MW:44106 
+
+129	Patl_T6c:638054322	140	16023	6.6	12.1%	2	2	0	3	3	0	0.00045	Patl_1315 NusB antitermination factor [Pseudoalteromonas atlantica T6c] 
+
+130	phage:H7-2_61592:63061_reverse	489	53586	4.7	9.6%	4	4	0	16	16	0	0.00069	MW:53586 
+
+131	CNTM:cont_sp|P19012|K1CO_HUMAN	456	49168	4.8	9.6%	6	0	6	10	0	10	0.00047	Keratin, type I cytoskeletal 15 (Cytokeratin 15) (K15) (CK 15) - Homo sapiens (Human). # pI:4.71 MW:49168 
+
+132	Lbla_MED217:638934343	395	43157	5.2	8.4%	2	1	1	3	1	2	0.00016	MED217_14090 translation elongation factor Tu [Leeuwenhoekiella blandensis MED217] 
+
+133	CNTM:cont_tr|Q61869	707	70977	8.0	8.1%	4	2	2	9	4	5	0.00027	Keratin 2 epidermis - Mus musculus (Mouse). # pI:8.23 MW:70977 
+
+134	Psp_TW-7:640010086	428	49741	7.0	7.5%	2	1	1	2	1	1	0.00010	ATW7_14186 hypothetical protein [Pseudoalteromonas sp. TW-7] 
+
+135	Rbif_HTCC2501:646325824	274	29933	10.9	7.3%	2	1	1	6	4	2	0.00046	RB2501_09870 50S ribosomal protein L2 [Robiginitalea biformata HTCC2501] 
+
+136	CNTM:cont_tr|Q9EQD6	474	52053	5.2	7.0%	5	0	5	6	0	6	0.00027	Keratin intermediate filament 16a - Mus musculus (Mouse). # pI:5.13 MW:52053 
+
+137	CNTM:cont_tr|Q9EQD7	473	51966	5.2	7.0%	5	0	5	6	0	6	0.00027	Keratin intermediate filament 16b - Mus musculus (Mouse). # pI:5.13 MW:51966 
+
+138	Rbif_HTCC2501:646327507	395	43210	5.1	6.8%	2	1	1	7	5	2	0.00038	RB2501_02110 elongation factor Tu [Robiginitalea biformata HTCC2501] 
+
+139	CNTM:cont_sp|P05787|K2C8_HUMAN	482	53543	5.6	6.2%	3	1	2	35	2	33	0.00154	Keratin, type II cytoskeletal 8 (Cytokeratin 8) (K8) (CK 8) - Homo sapiens (Human). # pI:5.52 MW:53543 
+
+140	CNTM:cont_sp|P13646|K1CM_HUMAN	458	49586	5.0	4.6%	2	0	2	4	0	4	0.00019	Keratin, type I cytoskeletal 13 (Cytokeratin 13) (K13) (CK 13) - Homo sapiens (Human). # pI:4.91 MW:49586 
+
+141	Psp_TW-7:640010248	864	93276	4.7	4.4%	3	3	0	7	7	0	0.00017	ATW7_09011 hypothetical protein [Pseudoalteromonas sp. TW-7] 
+
+142	Patl_T6c:638054575	870	98121	5.2	3.6%	2	2	0	2	2	0	0.00005	Patl_1566 leucyl-tRNA synthetase [Pseudoalteromonas atlantica T6c] 
+
+143	Ddon_MED134:638926348	650	73136	5.0	3.4%	2	0	2	2	0	2	0.00007	MED134_10495 OmpA family protein [Dokdonia donghaensis MED134] 
+
+144	Phal_TAC125:637735195	1267	140022	5.8	2.9%	2	1	1	2	1	1	0.00003	PSHAa2264 bifunctional putA protein: Proline dehydrogenase (Proline oxidase) and Delta-1-pyrroline-5-carboxylate dehydrogenase(P5C dehydrogenase) [Pseudoalteromonas haloplanktis TAC125] 
+
+145	Ddon_MED134:638924317	388	44968	6.1	2.6%	2	2	0	31	31	0	0.00169	MED134_05599 hypothetical protein [Dokdonia donghaensis MED134] 
+
+146	Lbla_MED217:638935955	816	91978	9.0	2.2%	2	0	2	6	0	6	0.00016	MED217_02245 putative transcriptional regulator [Leeuwenhoekiella blandensis MED217] 
+
+147	CNTM:cont_sp|P05783|K1CR_HUMAN	429	47927	5.5	1.6%	2	0	2	2	0	2	0.00010	Keratin, type I cytoskeletal 18 (Cytokeratin 18) (K18) (CK 18) - Homo sapiens (Human). # pI:5.34 MW:47927 
+
+148	phage:C.baltica_Phi18:3_6ft_orf0001	1982	222435	5.2	1.5%	2	0	2	8	0	8	0.00009	| 6 frame translation [C. baltica Phi18:3] 14:5962 reverse MW:222439 
+
+149	phage:C.baltica_Phi18:3_orf0001	1935	217391	5.2	1.5%	2	0	2	8	0	8	0.00009	| hypothetical protein [C. baltica Phi18:3] 14:5821 reverse MW:217394 
+
+150	Ptun_D2:639007302	12663	1394351	4.8	0.2%	2	1	1	2	1	1	0.00000	PTD2_03706 fibronectin type III domain protein [Pseudoalteromonas tunicata D2] 
+

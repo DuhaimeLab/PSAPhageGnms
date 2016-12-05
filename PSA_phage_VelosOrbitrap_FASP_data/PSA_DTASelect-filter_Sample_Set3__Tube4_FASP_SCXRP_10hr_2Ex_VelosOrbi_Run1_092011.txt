@@ -1,0 +1,53 @@
+DTASelect v1.9
+/masspec/ms/sullivan/Sample_Set3/Phages/Tube4_FASP_SCXRP_10hr_2Ex_VelosOrbi_Run1_092011/Frac1/analysis/tryp_carb_cyst_Sullivan_Sept2011/sequest
+/auto/gtl/db/sullivan/Sullivan_Sept2011
+SEQUEST v.27 in SQT format.
+ --DB -p 2 -r 1000
+true	Use criteria
+1.8	Minimum +1 XCorr
+2.5	Minimum +2 XCorr
+3.5	Minimum +3 XCorr
+0.08	Minimum DeltCN
+1	Minimum charge state
+3	Maximum charge state
+0.0	Minimum ion proportion
+1000	Maximum Sp rank
+-1.0	Minimum Sp score
+Include	Modified peptide inclusion
+Any	Tryptic status requirement
+true	Multiple, ambiguous IDs allowed
+Ignore	Peptide validation handling
+XCorr	Purge duplicate peptides by protein
+false	Include only loci with unique peptide
+false	Remove subset proteins
+Ignore	Locus validation handling
+0	Minimum modified peptides per locus
+1000	Minimum redundancy for low coverage loci
+2	Minimum peptides per locus
+
+Locus	Sequence Count	Spectrum Count	Sequence Coverage	Length	MolWt	pI	Validation Status	Descriptive Name
+Unique	FileName	XCorr	DeltCN	M+H+	CalcM+H+	TotalIntensity	SpRank	SpScore	IonProportion	Redundancy	Sequence
+phage:11-68c_10766:11536_reverse	3	288	28.1%	256	27254	4.8	U	MW:27253 
+*	Tube4_FASP_SCXRP_10hr_2Ex_VelosOrbi_Run1_092011_02.12326.12326.2	2.6232	0.4565	2018.0527	2019.2621	8013.2	1	484.6	41.7	1	R.LNEQGISTGQIFGPINTTK.L
+*	Tube4_FASP_SCXRP_10hr_2Ex_VelosOrbi_Run1_092011_05.00667.00667.2	5.5782	0.5101	1752.8501	1753.8662	8691.9	1	1469.0	61.1	285	K.GGALDAGGSITVSGSYNAR.T
+*	Tube4_FASP_SCXRP_10hr_2Ex_VelosOrbi_Run1_092011_06.09912.09912.3	3.8991	0.4675	3695.7297	3698.105	9670.2	1	1152.9	26.5	2	K.QVNFEIYDTSMMPTSELDLASSEFVTAALEGTAK.L
+phage:11-68c_12922:13845_reverse	5	169	24.1%	307	33983	5.2	U	MW:33983 
+*	Tube4_FASP_SCXRP_10hr_2Ex_VelosOrbi_Run1_092011_04.06928.06928.2	2.9834	0.3164	1371.6519	1372.477	7579.3	1	914.3	70.8	2	K.STSASNTYGWLGK.F
+*	Tube4_FASP_SCXRP_10hr_2Ex_VelosOrbi_Run1_092011_06.05310.05310.2	5.7625	0.6152	2133.959	2135.2053	6695.7	1	1793.5	72.2	2	K.SQAYTITNDDYESTVGVDR.N
+*	Tube4_FASP_SCXRP_10hr_2Ex_VelosOrbi_Run1_092011_03.08898.08898.2	4.8344	0.5881	1838.8777	1839.9965	9004.6	1	1951.6	76.7	2	R.NDIEDDNLGVYSPIFK.E
+*	Tube4_FASP_SCXRP_10hr_2Ex_VelosOrbi_Run1_092011_04.12453.12453.2	5.709	0.5455	1644.2327	1643.8418	8032.0	1	1663.4	71.4	162	R.DAAGFGFWQLAFANK.R
+*	Tube4_FASP_SCXRP_10hr_2Ex_VelosOrbi_Run1_092011_03.03874.03874.2	2.5659	0.2451	1235.5728	1236.278	4498.1	15	333.5	70.0	1	R.ELDSNSSNELK.G
+phage:13-15b_20347:21312_forward	2	20	13.1%	321	34303	5.0	U	MW:34303 
+*	Tube4_FASP_SCXRP_10hr_2Ex_VelosOrbi_Run1_092011_06.08918.08918.2	5.954	0.5622	2010.0225	2011.3062	9302.9	1	1700.6	64.7	18	R.AFAVTLQQNINMFNAATR.G
+*	Tube4_FASP_SCXRP_10hr_2Ex_VelosOrbi_Run1_092011_04.07844.07844.3	4.1747	0.2043	2613.2544	2614.8308	7932.8	1	984.4	34.8	2	K.GYSFSDTVTKPNDTALATPANWTR.I
+phage:13-15b_32462:34411_forward	2	5	6.8%	649	69402	4.9	U	MW:69402 
+*	Tube4_FASP_SCXRP_10hr_2Ex_VelosOrbi_Run1_092011_06.08571.08571.3	3.9915	0.3681	2783.5303	2785.2131	7215.5	1	1276.2	32.1	2	K.SFIGTNGIGIGGSGIGDVVNVSVLNPLVK.N
+*	Tube4_FASP_SCXRP_10hr_2Ex_VelosOrbi_Run1_092011_06.04273.04273.2	2.7003	0.3353	1623.7537	1624.7382	6948.5	1	577.7	64.3	3	R.CLTPDSVTSGHQGHK.I
+
+Í	Proteins	Peptide IDs	Copies
+Unfiltered	17738	47755	59508
+Redundant	114	554	5931
+Nonredundant	72	399	5094
+
+Classification	Nonredundant Proteins	Redundant Proteins
+Unclassified	0	0
