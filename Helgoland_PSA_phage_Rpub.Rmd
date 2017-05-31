@@ -1,7 +1,7 @@
 ---
-title: "Code and figures to complement 'Comparative omics and trait analyses of particle-associated <i>Pseudoalteromonas</i> phages advance the phage OTU concept'"
+title: "Code and figures to complement 'Comparative omics and trait analyses of marine <i>Pseudoalteromonas</i> phages advance the phage OTU concept'"
 author: "Melissa B. Duhaime"
-date: "February 15, 2017"
+date: "May 25, 2017"
 output:  html_document
 ---
 <!--BEGIN:  Set the global options and load packages-->
@@ -38,80 +38,102 @@ library(plyr)
 library(dplyr)
 library(reshape2)
 library(DT)
+library(Matrix)
 ```
 
 <!--END:  Set the global options and load packages-->
 
 # Figure 1. Genome relatedness heatmap.
 
-## How many genera of PSA phages exist? And who belong to those genera?
+## How many genera of PSA phages exist? And who belongs to those genera?
 
-I will use the working definition of genera set forth by Lavigne et al, 2008 (http://www.sciencedirect.com/science/article/pii/S0923250808000545), whereby phage genus membership is defined at >40% genes shared at bitscore > 75.
+I will use the working definition of genera set forth by [Lavigne et al. 2008](http://www.sciencedirect.com/science/article/pii/S0923250808000545), whereby phage genus membership is defined at >40% genes shared at bitscore > 75.
 
-1. To answer this, I collected the protein sequences of all phages of *Pseudoalteromonas*. This list included:
+1. To answer this, I collected the protein sequences of all phages of *Pseudoalteromonas* in individual protein fasta files. This list included:
   * 8 Helgoland PSA phage isolates that we sequenced here
   * 7 PSA phage isolates sequenced by others (available from GenBank)
   * 7 prophages predicted from Helgoland PSA bacterial genomes
   * 28 prophages predicted from published PSA bacterial genomes (available from GenBank and WGS; only those considered "high-quality" prophage predictions by VirSorter)
 
-This resulted in 2378 proteins, available in the file ```cat_all_PSA_phg_names.faa```
+This resulted in 2377 proteins in 50 multifastas protein files, available in the directory ```\faa```  
 
-2. Next, I ran an all-against-all blastp of these proteins.  
+2. Next, I ran pair-wise blastp protein homology searches for all pairs of PSA phages. The bash files called are also contained in the directory ```\faa```  
 ```
-makeblastdb -in cat_all_PSA_phg_names.faa -dbtype prot
-blastp -db cat_all_PSA_phg_names.faa -query cat_all_PSA_phg_names.faa -outfmt 6 -evalue 0.01 > all_v_all.blastp
+bash makeblastdbs.sh
+bash blastp.sh
 ```
-These results (```all_v_all.blastp```) are called into a dataframe. Only hits with bitscore >75 were considered, per [Lavigne et al. 2008](http://www.sciencedirect.com/science/article/pii/S0923250808000545).
+
+Here is an example line from the ```makeblastdbs.sh``` script:  
+```makeblastdb -in	ANT505.faa	 -dbtype prot```
+
+Here is an example line from the ```blastp.sh``` script:  
+```blastp -db ANT505.faa -query 1315s1g383.faa -outfmt 6 -evalue 0.1 > ANT505.faa_1315s1g383.faa.blastp```
+
+3. Next, the blastp results are parsed to determine the reciprocal best blastp (RBB) hits between all phages using the script ```reciprocal_blast_hits.py```, also stored in the ```/faa``` directory. In other words, all homologues between all phages were determined based on which pairs had the highest bit scores. Only hits with bitscore >75 were considered, per [Lavigne et al. 2008](http://www.sciencedirect.com/science/article/pii/S0923250808000545).
+
+```
+bash rbb_bit.sh  
+cat *.blastp.rbb.out > all.rbb_bit.out
+```
+
+
+Here is an example line from the ```reciprocal_blast_hits.py``` script, available [here](https://scriptomika.wordpress.com/2014/01/28/extract-best-reciprocal-blast-matches/):  
+```
+python reciprocal_blast_hits.py HM1_H101.blastp H101_HM1.blastp 1 2 12 high HM1_H101.rbb.out
+```
+
+
+
+
+These results (```all_v_all.blastp```) are called into a dataframe. 
 ```{r PSA_all_v_all_blastp}
-#setwd("/Users/duhaimem/busibee/PostDoc/TMPL/Helgoland_Phages/ecogenomics_project/genome_analysis/JGI/phage/seq_data/genes.aa")
 
-allPSA<-read.table("/Users/duhaimem/busibee/PostDoc/TMPL/Helgoland_Phages/ecogenomics_project/genome_analysis/JGI/phage/seq_data/genes.aa/all_v_all.blastp", header=FALSE)
+allPSA<-read.table("/Users/duhaimem/busibee/PostDoc/TMPL/Helgoland_Phages/ecogenomics_project/genome_analysis/JGI/phage/seq_data/genes.aa/faa/all.rbb_bit.out", header=FALSE)
 
-colnames(allPSA) <- c("query","sbjt","%id","algnmt_ln","mismtch","gaps","q.start","q.end","s.start","s.end","eval","bit")
+colnames(allPSA) <- c("query","sbjt", "bitA","bitB")
 
-allPSA_bs75 <- filter(allPSA, bit > 75)
+allPSA_bs75 <- filter(allPSA, bitA > 75 & bitB > 75)
 
 datatable(allPSA_bs75, 
           options = list(pageLength = 5),
-          caption = "All-v-All Blastp results"
+          caption = "All-v-All Reciprocal Best Blastp results"
           )
 ```
 
-Next, the number of proteins per phage or prophage is called in (```PSA_phg_CDS_counts.csv```), so that I can arrive at a pairwise matrix of % genes shared between phages. 
+4. Next, the number of proteins per phage or prophage is called in (```PSA_phg_CDS_counts.csv```), so that I can arrive at a pairwise matrix of % genes shared between phages. 
 
-``` {r PSA_CDS_cnt}
+```{r PSA_CDS_cnt}
 CDS_cnt<-read.table("/Users/duhaimem/busibee/PostDoc/TMPL/Helgoland_Phages/ecogenomics_project/genome_analysis/JGI/phage/seq_data/genes.aa/PSA_phg_CDS_counts.csv", header=FALSE)
 
 datatable(CDS_cnt, 
           options = list(pageLength = 5),
           caption = "CDS counts"
           )
+allPSA_bs75_ed <- allPSA_bs75 %>% mutate( V5 = query ) %>% mutate( V6 = sbjt ) 
+allPSA_bs75_ed$V5<-gsub("_.*", "", allPSA_bs75_ed$V5)
+allPSA_bs75_ed$V6<-gsub("_.*", "", allPSA_bs75_ed$V6)
 
-allPSA_bs75_ed <- allPSA_bs75 %>% mutate( V13 = query ) %>% mutate( V14 = sbjt ) 
-allPSA_bs75_ed$V13<-gsub("_.*", "", allPSA_bs75_ed$V13)
-allPSA_bs75_ed$V14<-gsub("_.*", "", allPSA_bs75_ed$V14)
-#View(allPSA_bs75_ed)
-write.table(unique(allPSA_bs75_ed$V13),"/Users/duhaimem/busibee/PostDoc/TMPL/Helgoland_Phages/ecogenomics_project/genome_analysis/JGI/phage/seq_data/genes.aa/unique_orgs.tsv", col.name=FALSE, quote=FALSE, sep="\t")
+write.table(unique(allPSA_bs75_ed$V5),"/Users/duhaimem/busibee/PostDoc/TMPL/Helgoland_Phages/ecogenomics_project/genome_analysis/JGI/phage/seq_data/genes.aa/unique_orgs.tsv", col.name=FALSE, quote=FALSE, sep="\t")
 
-allPSA_bs75_pairfreq<-allPSA_bs75_ed %>% group_by(V13,V14) %>%
+allPSA_bs75_pairfreq<-allPSA_bs75_ed %>% group_by(V5,V6) %>%
       summarize(Count = n())
 
 colnames(allPSA_bs75_pairfreq) <- c("query","subject","count")
 colnames(CDS_cnt) <- c("query","CDS")
 
 all_PSA_bs75.m<-acast(allPSA_bs75_pairfreq, query~subject, value.var="count")
+
 all_PSA_bs75.pct.m<-sweep(all_PSA_bs75.m, 1, apply(all_PSA_bs75.m, 2, function(x) max(x, na.rm = TRUE)), FUN="/")
 
-#View(allPSA_bs75_pairfreq)
-
-datatable(allPSA_bs75_pairfreq, 
+write.table(all_PSA_bs75.pct.m,"/Users/duhaimem/busibee/PostDoc/TMPL/Helgoland_Phages/ecogenomics_project/genome_analysis/JGI/phage/seq_data/genes.aa/all_PSA_bs75.pct.m.tsv", col.name=FALSE, quote=FALSE, sep="\t")
+ 
+datatable(all_PSA_bs75.pct.m, 
           options = list(pageLength = 5),
           caption = "% genes shared matrix"
           )
-
 ```
 
-I use the maximum distance method to encourage the self-hits and within-genus members to be attracted to the diagonal.
+I include a function (pmean) to create a symmetrical matrix, which forces the self-hits and related within-genus members to be attracted to the diagonal in the heatmap.
 ```{r PSA_gnm_relatedness_heatmap_all, fig.width=12, fig.height=9}
 
 all_PSA_bs75.pct.m[is.na(all_PSA_bs75.pct.m)] <- 0
@@ -119,10 +141,17 @@ all_PSA_bs75.pct.m[is.na(all_PSA_bs75.pct.m)] <- 0
 PSA_gnm_palette<- c("#ffffe5",colorRampPalette(c("#fff7bc", "#fd8d3c", "#bd0026"))(n = 24))
 col_breaks = c(0,
 seq(0.01,0.2,length=5),    		# for yellow
-seq(0.21,0.4,length=5),              # for orange
-seq(0.41,1,length=15))              # for red
+seq(0.21,0.4,length=5),       # for orange
+seq(0.41,1,length=15))        # for red
+
+PSA_gnm_palette_genera<- c("#ffffe5",colorRampPalette(c("#ffffe5", "#ffffe5", "#bd0026"))(n = 24))
+col_breaks = c(0,
+seq(0.01,0.2,length=5),    		# for yellow
+seq(0.21,0.39,length=5),       # for orange
+seq(0.40,1,length=15))        # for red
 
 prophg_v_iso = c("darkseagreen1",
+"darkseagreen1",
 "darkseagreen1",
 "darkseagreen1",
 "darkseagreen1",
@@ -169,6 +198,9 @@ prophg_v_iso = c("darkseagreen1",
 "palegreen3",
 "palegreen3")
 
+#function to rearrange the matrix to be symmetrical
+pmean <- function(x,y) (x+y)/2
+ all_PSA_bs75.pct.m[] <- pmean(all_PSA_bs75.pct.m, matrix(all_PSA_bs75.pct.m, nrow(all_PSA_bs75.pct.m), byrow=TRUE))
 
 heatmap.2(
   all_PSA_bs75.pct.m, 
@@ -181,35 +213,53 @@ heatmap.2(
   margin=c(8, 8), 
   main = "PSA Phage and Prophage\nblastp bit score >=75",
   breaks=col_breaks, 
-  dendrogram=c("none"), 
-  distfun = function(x) dist(x,method = 'maximum'),
+  dendrogram=c("none"),
   RowSideColors=prophg_v_iso
 )
 
 ```
 
-Next, I generate a similar plot, but now only include the phage isoaltes from Helgoland and those that share a genus with them.
+To create a network that represents which phage belong to the same genera (e.g., >40% gneome simlarity), a binary matrix is created.
+```{r PSA_gnm_genera_network, fig.width=12, fig.height=9}
+
+all_PSA_bs75.bin.genera.m<-all_PSA_bs75.pct.m
+all_PSA_bs75.bin.genera.m[all_PSA_bs75.bin.genera.m<0.4] <- 0
+all_PSA_bs75.bin.genera.m[all_PSA_bs75.bin.genera.m>0] <- 1
+
+#View(melt(all_PSA_bs75.bin.genera.m))
+library(igraph)
+g1 <- graph_from_adjacency_matrix( all_PSA_bs75.bin.genera.m)
+
+net <- simplify(g1, remove.multiple = F, remove.loops = T) 
+
+clu <- components(net)
+groups(clu)
+
+plot(net, main = "Hairball plot of PSA phage genera", edge.arrow.size=.5, vertex.size=5, vertex.label.dist=0.3,
+     vertex.label.cex=1, edge.curved=0.2)
+
+
+```
+The number of PSA phage and prophage genera, based on a 40% AAI cut-off is `r clu$no`.
+
+
+5. Next, I generate a subsetted heatplot with only the phage isolates from Helgoland and those phages that share a genus with them.
 ```{r PSA_gnm_relatedness_heatmap_isolates}
 
 #colnames(all_PSA_bs75.pct.m)
   
 helgo_phage = c("HM1",
+                "PH101",
                 "HS5",
-                "PH101", 
-                "TW1",
                 "ANT505",
                 "BSi20652",
                 "HP1",
                 "HS6",
                 "HS1",
                 "HS8",
-                "Pq0",
                 "HS2",
-                "PM2",
                 "HS4",
-                "RIO1",
-                "B8b",
-                "pYD6")
+                "RIO1")
 
 all_PSA_bs75.pct.m.helgo = subset(all_PSA_bs75.pct.m, rownames(all_PSA_bs75.pct.m) == helgo_phage)
 
@@ -243,7 +293,6 @@ pheno$tot_prod <- (pheno$phage_eor - pheno$phg_t0)
 pheno$prod_eff <- (pheno$tot_prod/pheno$tot_inf)
 #total phage prod at end of rise per total infections that happened
 pheno$prod_rate <- (pheno$tot_prod/pheno$tot_inf/pheno$end_of_rise)
-
 ```
 
 ```{r prod_rate_pre, fig.keep = 'none'}
@@ -360,7 +409,6 @@ text(195.5,1,"HS6")
 ## Extended infection phenotype data and phage one-step virus accumulation curves
 
 ```{r burst_per_phg_pre, fig.keep = 'none'}
-
 plot(pheno$PHS, pheno$burst, type="n", main="Burst Size")
 ```
 
@@ -432,13 +480,27 @@ write.table(PTOV_PSAbest_protsumm[,1:2],"/Users/duhaimem/Box Sync/manuscripts_in
 ```
 `r nrow(PTOV_PSAbest)` TOV proteins had a better hit to PSA viruses than existing RefSeq proteins.
 
-Proteins from these datasets that did not share significant homology to existing proteins in NCBI's RefSeq were considered unaffiliated. Some people refer to this as the "unknown" or "dark matter" of the virus protein universe. We sought to deterine how many of these unaffiliated proteins (e.g., do not form protein clusters with existing proteins in RefSeq) formed homology-based protein clusters with PSA phage proteins. "Affiliation" was assigned based on a significance threshold of blastp bit score >50 and e-value <0.001.
+Proteins from these datasets that did not share significant homology to existing proteins in NCBI's RefSeq were considered unaffiliated. Some people refer to this as the "unknown" or "dark matter" of the virus protein universe. We sought to deterine how many of these unaffiliated proteins (e.g., do not form protein clusters with existing proteins in RefSeq) formed homology-based protein clusters with PSA phage proteins. "Affiliation" was assigned based on a significance threshold of blastp bit score >50.
 
 Now to explore the contribution of PSA phages to annotating the unknown virus protein universe...
 ```{r POVTOV_blast_PSAonly_import}
 PTOV_PSAonly<-read.table("/Users/duhaimem/Box Sync/manuscripts_in_prep/PSA_comparative_genomics/2016Nov_PSA_phage_comparative_genomics/PSAphage_git_wd/TOV_43-vs-PSA_PSA-hits-only.csv", header=FALSE)
-
+#View(PTOV_PSAonly)
 colnames(PTOV_PSAonly) <- c("query","sbjt","%id","algnmt_ln","mismtch","gaps","q.start","q.end","s.start","s.end","eval","bit")
+
+datatable(as.matrix(summary(PTOV_PSAonly$bit)), 
+          options = list(pageLength = 6),
+          caption = "Summary of TOV-PSA blastp bitscores"
+          )
+        
+datatable(as.matrix(summary(PTOV_PSAonly$eval)), 
+          options = list(pageLength = 6),
+          caption = "Summary of TOV-PSA blastp e-values"
+          )
+
+```
+
+```{r POVTOV_blast_PSAonly_protsumm}
 
 PTOV_PSAonly_protsumm <- aggregate(as.character(query) ~ sbjt, PTOV_PSAonly, list)
 PTOV_PSAonly_protsumm["PTOV_hit_cnt"] <- lengths(PTOV_PSAonly_protsumm$`as.character(query)`)
@@ -451,7 +513,6 @@ datatable(PTOV_PSAonly_protsumm,
           )
 
 write.table(PTOV_PSAonly_protsumm[,1:2],"/Users/duhaimem/Box Sync/manuscripts_in_prep/PSA_comparative_genomics/2016Nov_PSA_phage_comparative_genomics/PSAphage_git_wd/PTOV_PSAonly_protsumm.tsv", row.names = FALSE, col.name=TRUE, quote=FALSE, sep="\t")
-
 
 ```
 `r nrow(PTOV_PSAonly)` TOV proteins had hits exclusively to PSA proteins, with no significant homology to existing RefSeq proteins. In other words, the PSA phages helped to annotate `r nrow(PTOV_PSAonly)` otherwise unknown ocean virus metagenome proteins as bonafide phage proteins.
